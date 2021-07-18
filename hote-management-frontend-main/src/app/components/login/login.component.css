@@ -1,0 +1,64 @@
+html,
+body {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%!important;
+    width: 100%!important;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .login {
+        display: inline-block;
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.logo {
+    background-image: url("../../../assets/img/logo_hoteles.jpeg");
+    background-repeat: no-repeat;
+}
+
+.logo img {
+    height: 100vh;
+    width: 50vw;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 100vw;
+    }
+}
+
+.form-signin {
+    width: 50vw;
+    max-width: 28rem;
+    margin: auto;
+    padding: 2rem 2rem;
+    border-radius: 5%;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+@media (max-width: 768px) {
+    .form-signin {
+        width: 100%;
+        margin: auto;
+    }
+}

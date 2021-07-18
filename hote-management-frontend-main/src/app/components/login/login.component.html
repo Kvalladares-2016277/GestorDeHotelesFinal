@@ -1,0 +1,23 @@
+<body class="login text-center">
+    <div class="logo">
+        <img src="../../../assets/img/login-img.jpg" alt="">
+    </div>
+    <div class="container m-4">
+        <form class="form-signin shadow-lg text-white" #login="ngForm" (ngSubmit)="onSubmit()">
+            <h1 class="h1"><strong>Iniciar Sesion</strong></h1>
+            <img class="mb-4" width="100" height="100" src="../../../assets/img/login.png" alt="img ...">
+            <div class="row mb-3 shadow-sm">
+                <label for="username" class="form-label">Ingresa tu nombre de usuario</label>
+                <input [(ngModel)]="user.username" class="form-control" type="text" name="username" id="username" placeholder="Usuario">
+            </div>
+            <div class="row mb-3 shadow-sm">
+                <label for="password" class="form-label">Ingresa tu contrasena</label>
+                <input [(ngModel)]="user.password" class="form-control" type="password" name="password" id="password" placeholder="Contrasena">
+            </div>
+
+            <div class="row mb-3">
+                <button class="btn btn-outline-light btn-block" type="submit" [disabled]="!login.form.valid">Iniciar Sesion</button>
+            </div>
+        </form>
+    </div>
+</body>

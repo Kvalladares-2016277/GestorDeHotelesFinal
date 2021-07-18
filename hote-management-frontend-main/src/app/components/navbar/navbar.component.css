@@ -1,0 +1,16 @@
+.logo-navbar {
+    max-height: 3rem;
+    max-width: 3rem;
+}
+
+nav {
+    width: 100%;
+}
+
+nav div {
+    width: 100%;
+}
+
+.allwith {
+    width: 100%!important;
+}
